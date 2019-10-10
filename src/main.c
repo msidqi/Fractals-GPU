@@ -43,8 +43,6 @@ int				ft_input_check(t_data *data, int argc, char **argv)
 			data->set = 'j';
 		else if (!ft_strcmp(argv[1], "Mandelbrot"))
 			data->set = 'm';
-		else if (!ft_strcmp(argv[1], "Sierp"))
-			data->set = 's';
 		else if (!ft_strcmp(argv[1], "Burning"))
 			data->set = 'b';
 		else if (!ft_strcmp(argv[1], "Tric"))
