@@ -39,13 +39,13 @@ int				ft_input_check(t_data *data, int argc, char **argv)
 {
 	if (argc == 2)
 	{
-		if (!ft_strcmp(argv[1], "Julia"))
+		if (!ft_strcmp(argv[1], "Julia") || ft_strcmp(argv[1], "julia"))
 			data->set = 'j';
-		else if (!ft_strcmp(argv[1], "Mandelbrot"))
+		else if (!ft_strcmp(argv[1], "Mandelbrot") || ft_strcmp(argv[1], "mandelbrot"))
 			data->set = 'm';
-		else if (!ft_strcmp(argv[1], "Burning"))
+		else if (!ft_strcmp(argv[1], "Burningship") || ft_strcmp(argv[1], "burningship"))
 			data->set = 'b';
-		else if (!ft_strcmp(argv[1], "Tric"))
+		else if (!ft_strcmp(argv[1], "Tricorn") || ft_strcmp(argv[1], "tricorn"))
 			data->set = 't';
 		else
 			return (0);
