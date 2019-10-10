@@ -1,5 +1,4 @@
 # GPU-Fractals
-OpenCL
 
 <img src="https://raw.githubusercontent.com/msidqi/GPU-Fractals/master/img/Screen%20Shot%202019-10-10%20at%204.10.34%20PM.png">
 
