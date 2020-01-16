@@ -1,5 +1,7 @@
 # GPU-Fractals
 
+Switch between sets by pressing S on your keyboard.  
+
 Make && ./fractol Mandelbrot<br>
 ./fractol Julia <br>
 ./fractol Burningship<br>

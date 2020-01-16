@@ -6,7 +6,7 @@
 /*   By: msidqi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/04 04:51:26 by msidqi            #+#    #+#             */
-/*   Updated: 2019/05/02 05:05:36 by msidqi           ###   ########.fr       */
+/*   Updated: 2020/01/16 10:22:41 by msidqi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,13 @@ int				ft_input_check(t_data *data, int argc, char **argv)
 {
 	if (argc == 2)
 	{
-		if (!ft_strcmp(argv[1], "Julia") || ft_strcmp(argv[1], "julia"))
+		if (!ft_strcmp(argv[1], "Julia") || !ft_strcmp(argv[1], "julia"))
 			data->set = 'j';
-		else if (!ft_strcmp(argv[1], "Mandelbrot") || ft_strcmp(argv[1], "mandelbrot"))
+		else if (!ft_strcmp(argv[1], "Mandelbrot") || !ft_strcmp(argv[1], "mandelbrot"))
 			data->set = 'm';
-		else if (!ft_strcmp(argv[1], "Burningship") || ft_strcmp(argv[1], "burningship"))
+		else if (!ft_strcmp(argv[1], "Burningship") || !ft_strcmp(argv[1], "burningship"))
 			data->set = 'b';
-		else if (!ft_strcmp(argv[1], "Tricorn") || ft_strcmp(argv[1], "tricorn"))
+		else if (!ft_strcmp(argv[1], "Tricorn") || !ft_strcmp(argv[1], "tricorn"))
 			data->set = 't';
 		else
 			return (0);
@@ -211,7 +211,7 @@ int main(int argc, char** argv)
 	srand(time(NULL));
 	if (!ft_input_check(&data, argc, argv))
 	{
-		ft_putendl("Usage: ./fractol [Mandelbrot][Julia][Sierp][Burning][Tric]");
+		ft_putendl("Usage: ./fractol [Mandelbrot][Julia][Burningship][Tric]");
 		return (0);
 	}
 	if (!(ft_window_setup(&data, "Fract'ol", 720, 1280)) || !ft_image_setup(&data))
