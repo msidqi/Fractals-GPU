@@ -1,6 +1,6 @@
 # GPU-Fractals
 
-Switch between sets by pressing S on your keyboard.  
+Switch between sets by pressing S on your keyboard and Reset to the start by pressing R.  
 
 Make && ./fractol Mandelbrot<br>
 ./fractol Julia <br>
