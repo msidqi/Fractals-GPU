@@ -6,7 +6,7 @@
 /*   By: msidqi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 03:13:04 by msidqi            #+#    #+#             */
-/*   Updated: 2019/05/02 03:13:05 by msidqi           ###   ########.fr       */
+/*   Updated: 2020/01/16 10:37:29 by msidqi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,10 +49,10 @@ static void	mouse_press_scroll(int button, t_data *data)
 		else
 		{
 			data->zoom *= 0.7;
-			data->movex -= (data->winpos.x - data->winwidth / 2) / data->zoom
-						- (data->winpos.x - data->winwidth / 2) / (oldzoom);
-			data->movey -= (data->winpos.y - data->winheight / 2) / data->zoom
-						- (data->winpos.y - data->winheight / 2) / (oldzoom);
+			data->movex -= -(data->winpos.x - data->winwidth / 2) / data->zoom
+						+ (data->winpos.x - data->winwidth / 2) / (oldzoom);
+			data->movey -= -(data->winpos.y - data->winheight / 2) / data->zoom
+						+ (data->winpos.y - data->winheight / 2) / (oldzoom);
 		}
 	}
 }
